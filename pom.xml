@@ -265,7 +265,7 @@
 				<plugin>
 					<groupId>org.apache.felix</groupId>
 					<artifactId>maven-bundle-plugin</artifactId>
-					<version>3.0.1</version>
+					<version>4.1.0</version>
 					<extensions>true</extensions>
 					<configuration>
 						<instructions>
@@ -378,7 +378,7 @@
 			<dependency>
 				<groupId>com.google.inject</groupId>
 				<artifactId>guice</artifactId>
-				<version>3.0</version>
+				<version>4.2.2</version>
 				<exclusions>
 					<exclusion>
 						<groupId>javax.inject</groupId>
@@ -395,7 +395,7 @@
 			<dependency>
 				<groupId>com.google.inject.extensions</groupId>
 				<artifactId>guice-multibindings</artifactId>
-				<version>3.0</version>
+				<version>4.2.2</version>
 			</dependency>
 
 			<dependency>
@@ -427,8 +427,8 @@
 
 			<dependency>
 				<groupId>biz.aQute.bnd</groupId>
-				<artifactId>bndlib</artifactId>
-				<version>2.4.0</version>
+				<artifactId>biz.aQute.bndlib</artifactId>
+				<version>4.1.0</version>
 				<scope>provided</scope>
 			</dependency>
 
@@ -522,6 +522,10 @@
 						<groupId>ch.qos.logback</groupId>
 						<artifactId>logback-classic</artifactId>
 					</exclusion>
+					<exclusion>
+						<groupId>org.ow2.asm</groupId>
+						<artifactId>*</artifactId>
+					</exclusion>
 				</exclusions>
 			</dependency>
 
@@ -547,7 +551,7 @@
 			<dependency>
 				<groupId>com.google.guava</groupId>
 				<artifactId>guava</artifactId>
-				<version>19.0</version>
+				<version>26.0-jre</version>
 				<scope>test</scope>
 			</dependency>
 		</dependencies>
@@ -568,7 +572,7 @@
 
 		<dependency>
 			<groupId>biz.aQute.bnd</groupId>
-			<artifactId>bndlib</artifactId>
+			<artifactId>biz.aQute.bndlib</artifactId>
 		</dependency>
 
 		<!-- Test -->
